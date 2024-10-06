@@ -1,0 +1,483 @@
+@media screen and (max-width: 1450px) {
+    .main {
+        .offer {
+            min-width: 450px;
+        }
+    }
+
+    .partners {
+        .container {
+            padding: 35px 50px;
+        }
+
+        .wrapper {
+            img {
+                height: 34px;
+            }
+        }
+    }
+
+    .examples {
+        br {
+            display: none;
+        }
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+
+        > div {
+            &:first-child {
+                order: 1;
+            }
+
+            &:nth-child(2) {
+                order: 3;
+            }
+
+            &:nth-child(3) {
+                order: 4;
+            }
+
+            &:last-child {
+                order: 2;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .main {
+        .offer {
+            margin-top: 120px;
+
+            h1 {
+                margin: 15px 0 40px;
+            }
+        }
+
+        img {
+            width: 500px;
+            margin-top: 50px;
+        }
+    }
+
+    .partners {
+        padding-top: 50px;
+
+        .wrapper {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 50px 35px;
+
+            img {
+                height: auto;
+                max-width: 30%;
+            }
+        }
+    }
+
+    .tools {
+        .tools-slider {
+            .swiper-slide {
+                &.desk-research {
+                    .stack {
+                        position: static;
+                        margin-left: auto;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    .footer {
+        padding: 30px 15px 60px;
+
+        .tel {
+            a {
+                font-size: 48px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    body {
+        font-size: 16px;
+    }
+    
+    h1 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    h3 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    h4 {
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 25px;
+    }
+
+    .header {
+        .mail {
+            display: none;
+        }
+
+        .tel {
+            margin-left: auto;
+
+            > div {
+                display: none;
+            }
+        }
+    }
+
+    .main {
+        .container {
+            flex-direction: column-reverse;
+        }
+
+        .offer {
+            margin-top: 30px;
+            width: 100%;
+            min-width: auto;
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+        img {
+            margin-top: 0;
+        }
+    }
+
+    .principles {
+        padding-top: 70px;
+    
+        .wrapper {
+            margin-top: 30px;
+            grid-template-columns: 1fr 1fr;
+
+            .item:last-child {
+                grid-column: span 2;
+
+                h4 br {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .tools {
+        padding-top: 90px;
+
+        .tools-slider {
+            margin-top: 30px;
+
+            .swiper-slide {
+                .content {
+                    gap: 35px;
+
+                    .item {
+                        .icon {
+                            height: 65px;
+                            width: 65px;
+
+                            img {
+                                max-width: 50%;
+                            }
+                        }
+
+                        p {
+                            font-size: 15px;
+                            line-height: 120%;
+
+                            br {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                &.desk-research {
+                    .stack {
+                        margin-top: 25px;
+                        margin-left: 0;
+                    }
+                }
+            }
+
+            &__pagination {
+                display: none;
+            }
+
+            &__fraction {
+                text-align: left;
+            }
+
+            .control {
+                flex-direction: row-reverse;
+                justify-content: space-between;
+            }
+
+        }
+    }
+
+    .examples {
+        padding-top: 70px;
+
+        .filter {
+            margin: 20px 0 15px;
+            padding-bottom: 15px;
+            gap: 10px;
+
+            &__item {
+                height: 48px;
+                padding: 0 15px;
+                font: 14px;
+            }
+        }
+
+        .wrapper {
+            grid-auto-rows: 350px;
+        }
+    }
+
+    .clients {
+        padding-top: 70px;
+
+        .container {
+            position: relative;
+            padding-bottom: 40px;
+        }
+        
+        .head {
+            flex-direction: column;
+
+            p {
+                margin-left: 0;
+                margin-top: 15px;
+            }
+
+            .navigation {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+
+        .clients-slider {
+            .swiper-slide {
+                height: 95px;
+
+                img {
+                    max-height: 34px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        .logo {
+            img {
+                width: 130px;
+            }
+        }
+
+        .social-media {
+            margin-top: 30px;
+            gap: 10px;
+
+            &__item {
+                width: 50px;
+                height: 50px;
+
+                svg {
+                    max-width: 50%;
+                }
+            }
+        }
+
+        .link {
+            font-size: 16px;
+
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+
+        .tel {
+            a {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+
+        .mail {
+            p {
+                font-size: 13px;
+            }
+
+            a {
+                font-size: 16px;
+                display: block;
+                margin-top: 3px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 761px) {
+    .header {
+        .container {
+            padding-top: 25px;
+        }
+
+        .logo {
+            img {
+                max-width: 130px;
+            }
+        }
+
+        .tel {
+            img {
+                max-width: 50px;
+            }
+        }
+    }
+
+    .main {
+
+        .offer {
+            h1 {
+                margin: 5px 0 20px;
+            }
+
+            p {
+                width: 100%;
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .partners {
+        .container {
+            padding: 30px 15px;  
+        }
+
+        .wrapper {
+            img {
+                max-width: 40%;
+            }
+        }
+    }
+
+    .principles {
+        .wrapper {
+            grid-template-columns: 1fr;
+
+            .item:last-child {
+                grid-column: span 1;
+
+                h4 br {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .tools {
+        .tools-slider {
+            height: 950px;
+
+            .swiper-slide {
+                padding: 40px 15px 140px;
+
+                > p {
+                    width: 100%;
+                    margin-top: 9px;
+                }
+
+                .stack {
+                    max-width: 100%;
+
+                    &__wrapper {
+                        flex-wrap: wrap;
+
+                        img {
+                            height: 35px;
+                        }
+                    }
+                }
+
+                .content {
+                    position: static;
+                    margin-top: 65px;
+                    grid-template-columns: 1fr !important;
+                    padding: 0;
+                }
+            }
+
+            .control {
+                padding: 0 15px;
+            }
+        }
+    }
+
+    .examples {
+        .wrapper {
+            grid-template-columns: 1fr;
+            
+            .item {
+                padding: 20px 50px 20px 15px;
+            }
+        }
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        gap: 0;
+        position: relative;
+
+        .tel {
+            margin-top: 20px;
+        }
+
+        .mail {
+            margin-top: 25px;
+            margin-bottom: 130px;
+        }
+
+        .social-media {
+            position: absolute;
+            left: 15px;
+            top: 210px;
+        }
+
+        .link {
+            margin-bottom: 15px;
+        }
+    }
+}

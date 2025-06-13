@@ -48,3 +48,69 @@ const clietnsSwiper = new Swiper('.clients-slider', {
         prevEl: '.clients-slider__prev',
     },
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // табы примеров работ
+    const tabItems = document.querySelectorAll('.examples .filter__item');
+    const tabContents = document.querySelectorAll('.examples .wrapper');
+    
+    tabItems.forEach(item => {
+        item.addEventListener('click', function() {
+            tabItems.forEach(tab => tab.classList.remove('filter__item_active'));
+            this.classList.add('filter__item_active');
+
+            const tabIndex = this.getAttribute('data-tab');
+            
+            tabContents.forEach(content => {
+                content.classList.remove('wrapper_active');
+            });
+            
+            document.querySelector(`.wrapper[data-tab-content="${tabIndex}"]`).classList.add('wrapper_active');
+        });
+    });
+
+    // Навигация в футере
+    const links = document.querySelectorAll('.link');
+
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault()
+
+            const href = this.getAttribute('href');
+
+            console.log(href)
+
+            // Если ссылка ведет на примеры работ с указанием таба
+            if (href.startsWith('examples_')) {
+                const tabIndex = parseInt(href.split('_')[1]);
+
+                if (!isNaN(tabIndex) && tabItems[tabIndex]) {
+                    const examplesSection = document.getElementById('examples');
+                    if (examplesSection) {
+                        examplesSection.scrollIntoView({ 
+                            behavior: 'smooth', 
+                            block: 'start' 
+                        });
+                    }
+
+                    console.log(tabItems[tabIndex]);
+                    
+                    
+                    setTimeout(() => {
+                        tabItems[tabIndex].click();
+                    }, 300);
+                }
+                return;
+            }
+
+            // Обычный сколл
+            const targetElement = document.getElementById(href);
+            if (targetElement) {
+                targetElement.scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'start' 
+                });
+            }
+        });
+    });
+});

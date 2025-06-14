@@ -50,9 +50,35 @@ const clietnsSwiper = new Swiper('.clients-slider', {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
+    function initSwipers() {
+        const allSliders = document.querySelectorAll('.examples-slider');
+        allSliders.forEach(slider => {
+            if (!slider.swiper) {
+                new Swiper(slider, {
+                    breakpoints: {
+                        0: {
+                            slidesPerView: 1.2,
+                            spaceBetween: 15,
+                        },
+                        762: {
+                            slidesPerView: 2.4,
+                            spaceBetween: 15,
+                        },
+                        1201: {
+                            slidesPerView: 3,
+                            spaceBetween: 20,
+                        },
+                    },
+                });
+            }
+        });
+    }
+
+    initSwipers();
+    
     // табы примеров работ
     const tabItems = document.querySelectorAll('.examples .filter__item');
-    const tabContents = document.querySelectorAll('.examples .wrapper');
+    const tabContents = document.querySelectorAll('.examples-slider');
     
     tabItems.forEach(item => {
         item.addEventListener('click', function() {
@@ -62,10 +88,10 @@ document.addEventListener('DOMContentLoaded', function() {
             const tabIndex = this.getAttribute('data-tab');
             
             tabContents.forEach(content => {
-                content.classList.remove('wrapper_active');
+                content.classList.remove('active');
             });
             
-            document.querySelector(`.wrapper[data-tab-content="${tabIndex}"]`).classList.add('wrapper_active');
+            document.querySelector(`.examples-slider[data-tab-content="${tabIndex}"]`).classList.add('active');
         });
     });
 
@@ -77,8 +103,6 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault()
 
             const href = this.getAttribute('href');
-
-            console.log(href)
 
             // Если ссылка ведет на примеры работ с указанием таба
             if (href.startsWith('examples_')) {

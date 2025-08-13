@@ -1,0 +1,71 @@
+.header {
+    .container {
+        padding-top: 38px;
+        display: flex;
+        align-items: center;
+    }
+
+    .mail {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: #222;
+        font-size: 16px;
+        font-weight: 500;
+        margin-right: 85px;
+    }
+
+    .tel {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        p {
+            color: #505050;
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        span {
+            color: #ABABAB;
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .header {
+        .mail {
+            display: none;
+        }
+
+        .tel {
+            margin-left: auto;
+
+            > div {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 761px) {
+    .header {
+        .container {
+            padding-top: 25px;
+        }
+
+        .logo {
+            img {
+                max-width: 130px;
+            }
+        }
+
+        .tel {
+            img {
+                max-width: 50px;
+            }
+        }
+    }
+}

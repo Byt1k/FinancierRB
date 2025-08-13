@@ -1,0 +1,510 @@
+.microloans-main {
+    overflow: hidden;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .offer {
+        min-width: 800px;
+        margin-top: 120px;
+
+        h1 {    
+            span {
+                color: #0291EB;
+            }
+        }
+
+        p {
+            max-width: 580px;
+            margin: 25px 0 60px;
+        }
+
+        .actions {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            .btn {
+                max-width: 300px;
+            }
+        }
+    }
+}
+
+.importance-research {
+    .wrapper {
+        background: url("../img/importance-research-bg.svg") no-repeat center / cover;
+        padding: 50px 30px 30px;
+        border-radius: 30px;
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 100px;
+        }
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            border-radius: 40px;
+            height: 320px;
+            background-color: #fff;
+            padding: 30px;
+
+            img {
+                width: 70px;
+                height: 70px;
+            }
+
+            p {
+                margin-top: auto;
+                line-height: 145%;
+
+                span {
+                    color: #0291EB;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+.facts {
+    padding-top: 160px;
+
+    .grid {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .item {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 30px;
+        padding: 30px;
+
+        > div {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        img {
+            max-width: max-content;
+        }
+
+        &:nth-child(1) {
+            background-image: url("../img/facts/bg-1.svg");
+        }
+
+        &:nth-child(2) {
+            background-image: url("../img/facts/bg-2.svg");
+            
+            h3, p {
+                color: #fff;
+            }
+
+            p {
+                max-width: 264px;
+            }
+        }
+
+        &:nth-child(3) {
+            background-image: url("../img/facts/bg-3.svg");
+            
+            h3, p {
+                color: #fff;
+            }
+        }
+
+        &:nth-child(4) {
+            background-image: url("../img/facts/bg-4.svg");
+        
+            p {
+                max-width: 294px;
+            }
+        }
+    }
+}
+
+.what-you-will-get {
+    padding-top: 160px;
+
+    h2 {
+        max-width: 875px;
+    }
+
+    .grid {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 50px;
+    }
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #fff;
+        border-radius: 25px;
+        box-shadow: 0px 4.4px 33.32px 0px rgba(118, 146, 214, 0.15);
+        padding: 25px;
+        height: 380px;
+
+        img {
+            width: 240px;
+            height: 240px;
+        }
+
+        h4 {
+            font-weight: 500;
+        }
+    }
+}
+
+.access-research {
+    padding-top: 160px;
+    padding-bottom: 80px;
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin-top: 50px;
+    }
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        height: 540px;
+        border-radius: 15px;
+        box-shadow: 0px 4.4px 33.32px 0px rgba(118, 146, 214, 0.15);
+        padding: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &:first-child {
+            background-image: url("../img/examples/bg2.png");
+        }
+
+        &:last-child {
+            background-image: url("../img/examples/bg1.png");
+        }
+
+        .title {
+            font-size: 28px;
+            font-weight: 700;    
+            line-height: 130%;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 30px;
+
+            li {
+                position: relative;
+                padding-left: 20px;
+
+                &::before {
+                    content: "";
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: #0291EB;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+
+        .price {
+            margin-top: auto;
+            margin-bottom: 30px;
+            font-size: 32px;
+            font-weight: 700;
+        }
+    }
+}
+
+.form-section {
+    padding: 120px 0;
+
+    .wrapper {
+        height: 560px;
+        background-color: #0291EB;
+        border-radius: 35px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+
+        .head {
+            padding: 30px;
+
+            h2 {
+                color: #fff;
+            }
+
+            img {
+                position: absolute;
+                bottom: 0;
+                pointer-events: none;
+            }
+        }
+
+        .form {
+            min-width: 770px;
+            width: 770px;
+            background-color: #fff;
+            box-shadow: 0px 4.4px 33.32px 0px rgba(118, 146, 214, 0.15);
+            border-radius: 15px;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px 20px;
+            position: absolute;
+            top: -50px;
+            right: 0;
+
+            .full-width {
+                grid-column: span 2;
+            }
+        }
+    }
+}
+
+.download-demo {
+    padding-top: 100px;
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        padding: 30px;
+        background-color: #1B9BEF;
+        border-radius: 25px;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+
+        > img {
+            position: absolute;
+            top: -50px;
+            left: -30px;
+            pointer-events: none;
+        }
+
+        *:not(button) {
+            color: #fff
+        }
+
+        > div {
+            margin-left: 430px;
+        }
+
+        p {
+            font-size: 24px;
+            margin: 25px 0 35px;
+        }
+    }
+}
+
+.why-trust-us {
+    padding-top: 160px;
+
+    h1 {
+        max-width: 940px;
+
+        span {
+            color: #0223BF;
+        }
+    }
+
+    .grid {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .item {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 30px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        p {
+            color: #fff;
+            max-width: 500px;
+
+            span {
+                font-weight: 700;
+            }
+        }
+
+        ul {
+            color: #fff;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                width: 1px;
+                height: 80%;
+                background-color: #B3DEF9;
+            }
+
+            li {
+                padding-left: 15px;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: #E0F3FF;
+                    position: absolute;
+                    left: -4.5px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+
+        &:nth-child(1), &:nth-child(2) {
+            height: 280px;
+
+            p {
+                &:first-child {
+                    font-size: 68px;
+                    font-weight: 600;
+                }
+
+                &:last-child {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        &:nth-child(1), &:nth-child(5) {
+            background-image: url("../img/why-trust-us/bg-1.svg");
+        }
+
+        &:nth-child(2), &:nth-child(4) {
+            background-image: url("../img/why-trust-us/bg-2.svg");
+        }
+
+        &:nth-child(4), &:nth-child(5) {
+            height: 410px;
+
+            p:first-child {
+                font-size: 36px;
+                font-weight: 600;
+            }
+
+            p:nth-child(2) {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .slider {
+        grid-column: span 2;
+        height: 290px;
+        border-radius: 30px;
+        background: url("../img/microloans-partners-bg.svg") no-repeat center / cover;
+        padding: 30px;
+        overflow: hidden;
+
+        .head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 60px;
+
+            .title {
+                font-size: 36px;
+                font-weight: 600;
+            }
+
+            .navigation {
+                margin-left: auto;
+                display: flex;
+                gap: 15px;
+
+                > button {
+                    width: 57px;
+                    height: 57px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.offer-banner {
+    padding-top: 160px;
+    padding-bottom: 80px;
+
+    .wrapper {
+        height: 400px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: url("../img/offer-banner-bg.svg") no-repeat center / cover;
+        padding: 30px;
+        border-radius: 30px;
+
+        > img {
+            margin-left: -50px;
+        }
+
+        > div {
+            width: 940px;
+            min-width: 940px;
+        }
+
+        p {
+            max-width: 470px;
+            margin: 25px 0 50px;
+        }
+
+        .actions {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+}
+
+@import 'responsive-microloans-page';

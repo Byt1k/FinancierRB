@@ -1,0 +1,446 @@
+@media screen and (max-width: 1450px) {
+    .form-section {
+        .wrapper {
+            flex-direction: column;
+            height: auto;
+
+            .head {
+                img {
+                    position: static;
+                    margin-top: -100px;
+                }
+            }
+
+            .form {
+                position: static;
+                min-width: auto;
+                width: calc(100% + 30px);
+                margin-left: -15px;
+                margin-top: -100px;
+                margin-bottom: -30px;
+            }
+        }
+    }
+
+    .offer-banner {
+        .wrapper {
+            > img {
+                margin-left: -250px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .microloans-main {
+        padding-bottom: 160px;
+
+        .container {
+            flex-direction: column-reverse;
+
+            .main-img {
+                max-width: 100%;
+                margin-left: 100px;
+            }
+
+            .offer {
+                margin-top: -120px;
+            }
+        }
+    }
+
+    .importance-research {
+        .wrapper {
+            .grid {
+                margin-top: 30px;
+                grid-template-columns: 1fr;
+            }
+
+            .item {
+                height: auto;
+                gap: 30px;
+
+                img {
+                    width: 54px;
+                    height: 54px;
+                }
+            }
+        }
+    }
+
+    .facts {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .microloans-main {
+        padding-bottom: 80px;
+
+        .offer {
+            min-width: auto;
+
+            h1 {
+                max-width: 480px;
+
+                svg {
+                    height: 22px;
+                    margin: 0 -10px;
+                }
+            }
+
+            p {
+                margin: 20px 0 40px;
+            }
+
+            .actions {
+                gap: 15px;
+
+                .btn {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    .importance-research {
+        .wrapper {
+            border-radius: 15px;
+            padding: 20px;
+
+            .item {
+                border-radius: 15px;
+                padding: 20px;
+            }
+        }
+    }
+
+    .facts {
+        padding-top: 80px;
+
+        .grid {
+            margin-top: 30px;
+        }
+
+        .item {
+            height: 210px;
+            padding: 20px;
+            border-radius: 15px;
+
+            > div {
+                gap: 10px;
+            }
+
+            &:first-child {
+                img {
+                    height: 70px;
+                }
+            }
+
+            &:nth-child(3) {
+                img {
+                    height: 50px;
+                }
+            }
+        }
+    }
+
+    .what-you-will-get {
+        padding-top: 80px;
+
+        .grid {
+            margin-top: 30px;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .item {
+            height: auto;
+            border-radius: 15px;
+
+            img {
+                width: 140px;
+                height: 140px;
+            }
+
+            &:last-child {
+                grid-column: span 2;
+            }
+        }
+    }
+
+    .access-research {
+        padding-top: 80px;
+        padding-bottom: 0;
+
+        .grid {
+            margin-top: 30px;
+            gap: 15px;
+        }
+
+        .item {
+            padding: 20px;
+            height: 320px;
+
+            ul {
+                margin-top: 15px;
+                font-size: 15px;
+            }
+
+            .title {
+                font-size: 18px;
+            }
+
+            .price {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .form-section {
+        padding-top: 80px;
+        padding-bottom: 0;
+
+        .wrapper {
+            border-radius: 15px;
+
+            .head {
+                img {
+                    width: 70%;
+                    margin-top: -70px;
+                }
+            }
+
+            .form {
+                gap: 20px 15px;
+            }
+        }
+    }
+
+    .download-demo {
+        padding-top: 100px;
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            border-radius: 15px;
+
+            img {
+                width: 70%;
+                position: static;
+                margin-top: -50px;
+            }
+
+            div {
+                margin-top: -100px;
+                margin-left: 0;
+            }
+
+            p {
+                font-size: 16px;
+                margin: 20px 0 30px;
+            }
+        }
+    }
+
+
+    .why-trust-us {
+        padding-top: 80px;
+
+        h1 {
+            max-width: 500px;
+        }
+
+        .grid {
+            margin-top: 30px;
+            grid-template-columns: 1fr;
+        }
+
+        .item {
+            padding: 20px;
+            border-radius: 15px;
+
+            ul {
+                font-size: 16px;
+            }
+
+
+            &:nth-child(1), &:nth-child(2) {
+                height: 210px;
+
+                p {
+                    &:first-child {
+                        font-size: 36px;
+                    }
+
+                    &:last-child {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            &:nth-child(4), &:nth-child(5) {
+                height: 220px;
+
+                p {
+                    &:first-child {
+                        font-size: 20px;
+                    }
+
+                    &:nth-child(2) {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        .slider {
+            grid-column: span 1;
+            position: relative;
+            padding: 25px;
+            border-radius: 15px;
+
+            .head {
+                .title {
+                    font-size: 20px;
+                }
+
+                .navigation {
+                    position: absolute;
+                    bottom: 20px;
+                    right: 20px;
+                }
+            }
+        }
+    }
+
+    .offer-banner {
+        padding-top: 80px;
+
+        .wrapper {
+            height: auto;
+            flex-direction: column-reverse;
+            align-items: center;
+            border-radius: 15px;
+
+            img {
+                margin: 0;
+            }
+
+            > div {
+                min-width: auto;
+                width: auto;
+
+                p {
+                    margin: 15px 0 30px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 761px) {
+    .microloans-main {
+        .container {
+            .main-img {
+                margin-left: 30px;
+            }
+
+            .offer {
+                margin-top: -30px;
+            }
+
+            .actions {
+                flex-direction: column;
+                
+                .btn {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .what-you-will-get {
+        .grid {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .access-research {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .form-section {
+        .wrapper {
+            .head {
+                padding: 20px;
+
+                img {
+                    margin-top: -30px;
+                }
+            }
+
+            .form {
+                margin-top: -30px;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    .download-demo {
+        .wrapper {
+            padding: 20px;
+
+            img {
+                width: 90%;
+                margin-top: -20px;
+            }
+
+            div {
+                margin-top: -50px;
+            }
+        }
+    }
+
+    .why-trust-us {
+        .grid {
+            .slider {
+                .swiper-slide {
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .offer-banner {
+        .wrapper {
+            padding: 20px;
+
+            img {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            div {
+                .actions {
+                    flex-direction: column;
+                    gap: 10px;
+
+                    .btn {
+                        max-width: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

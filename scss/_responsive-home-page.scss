@@ -22,30 +22,6 @@
             display: none;
         }
     }
-
-    .footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 50px;
-
-        > div {
-            &:first-child {
-                order: 1;
-            }
-
-            &:nth-child(2) {
-                order: 3;
-            }
-
-            &:nth-child(3) {
-                order: 4;
-            }
-
-            &:last-child {
-                order: 2;
-            }
-        }
-    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -93,16 +69,6 @@
 
         }
     }
-
-    .footer {
-        padding: 30px 15px 60px;
-
-        .tel {
-            a {
-                font-size: 48px;
-            }
-        }
-    }
 }
 
 @media screen and (max-width: 991px) {
@@ -131,20 +97,6 @@
         font-size: 17px;
         font-weight: 600;
         line-height: 25px;
-    }
-
-    .header {
-        .mail {
-            display: none;
-        }
-
-        .tel {
-            margin-left: auto;
-
-            > div {
-                display: none;
-            }
-        }
     }
 
     .main {
@@ -294,79 +246,9 @@
             }
         }
     }
-
-    .footer {
-        .logo {
-            img {
-                width: 130px;
-            }
-        }
-
-        .social-media {
-            margin-top: 30px;
-            gap: 10px;
-
-            &__item {
-                width: 50px;
-                height: 50px;
-
-                svg {
-                    max-width: 50%;
-                }
-            }
-        }
-
-        .link {
-            font-size: 16px;
-
-            &:not(:last-child) {
-                margin-bottom: 15px;
-            }
-        }
-
-        .tel {
-            a {
-                font-size: 24px;
-            }
-
-            p {
-                font-size: 13px;
-            }
-        }
-
-        .mail {
-            p {
-                font-size: 13px;
-            }
-
-            a {
-                font-size: 16px;
-                display: block;
-                margin-top: 3px;
-            }
-        }
-    }
 }
 
 @media screen and (max-width: 761px) {
-    .header {
-        .container {
-            padding-top: 25px;
-        }
-
-        .logo {
-            img {
-                max-width: 130px;
-            }
-        }
-
-        .tel {
-            img {
-                max-width: 50px;
-            }
-        }
-    }
-
     .main {
 
         .offer {
@@ -453,31 +335,6 @@
             .item {
                 padding: 20px 50px 20px 15px;
             }
-        }
-    }
-
-    .footer {
-        grid-template-columns: 1fr;
-        gap: 0;
-        position: relative;
-
-        .tel {
-            margin-top: 20px;
-        }
-
-        .mail {
-            margin-top: 25px;
-            margin-bottom: 130px;
-        }
-
-        .social-media {
-            position: absolute;
-            left: 15px;
-            top: 210px;
-        }
-
-        .link {
-            margin-bottom: 15px;
         }
     }
 }

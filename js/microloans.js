@@ -23,3 +23,11 @@ const microloansPartnersSwiper = new Swiper('.microloans-partners-slider', {
         prevEl: '.microloans-partners-prev',
     },
 });
+
+
+
+const form = document.querySelector('.form-section');
+
+const goToForm = () => {
+  form.scrollIntoView({ behavior: "smooth" })
+}

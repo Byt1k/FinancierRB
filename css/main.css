@@ -162,6 +162,8 @@ h4 {
   font-size: 18px;
   font-weight: 700;
   line-height: 100%;
+  text-align: center;
+  cursor: pointer;
 }
 .btn.primary {
   background-color: #0291EB;
@@ -506,6 +508,7 @@ h4 {
   color: #626262;
   font-size: 16px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 .main .offer h1 {
   margin: 37px 0 68px;
@@ -1288,7 +1291,7 @@ h4 {
   left: -30px;
   pointer-events: none;
 }
-.download-demo .wrapper *:not(button) {
+.download-demo .wrapper *:not(.btn) {
   color: #fff;
 }
 .download-demo .wrapper > div {
